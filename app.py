@@ -97,7 +97,7 @@ elif app_mode == "🧠 SHAP Explainability":
     ### 🧾 Interpretation:
     - **Rolling sales trends** (e.g., 7-day average) and **recent lag values** are top influencers.
     - Time-based features (e.g., `day_of_week`, `month`, `holiday_flag`) also significantly affect predictions.
-    - Understanding SHAP values helps non-technical stakeholders with and transparency and trust model decisions.
+    - Understanding SHAP values helps non-technical stakeholders with transparency and trust model decisions.
     """)
 
 # ----------------------

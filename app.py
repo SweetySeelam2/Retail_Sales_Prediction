@@ -67,6 +67,21 @@ if app_mode == "📈 Prediction App":
     **MAE Interpretation**: On average, the model's predicted sales deviate from the actual by **${mae:.2f}** per transaction.
     - If avg sale = $25 → this model has approx **{round((mae/25)*100)}% error rate**.
     - Lower MAE means more reliable revenue forecasts.
+
+    ✅ Why is MAE shown in dollars ($)?                                                                  
+    The model predicts **Sales_Amount**, which is a **monetary value**, so MAE is also in **dollars**.
+
+    🔎 **Example:**
+    - True Sales: **$50**
+    - Predicted: **$38**
+    - Absolute Error: **|50 - 38| = $12**
+    - Averaging all such errors gives the **MAE**.
+
+    - **Random Forest MAE**: ~$9.21  
+    - **XGBoost MAE**: ~$8.67 → more accurate  
+    - **Current MAE**: **${mae:.2f}**
+
+    ✅ It’s in **dollars** because the model is trained to predict monetary outcomes.
     """)
 
 # ----------------------
@@ -82,7 +97,7 @@ elif app_mode == "🧠 SHAP Explainability":
     ### 🧾 Interpretation:
     - **Rolling sales trends** (e.g., 7-day average) and **recent lag values** are top influencers.
     - Time-based features (e.g., `day_of_week`, `month`, `holiday_flag`) also significantly affect predictions.
-    - Understanding SHAP values helps non-technical stakeholders trust model decisions.
+    - Understanding SHAP values helps non-technical stakeholders with and transparency and trust model decisions.
     """)
 
 # ----------------------
@@ -91,16 +106,16 @@ elif app_mode == "🧠 SHAP Explainability":
 elif app_mode == "🔍 About the Model":
     st.title("📌 About This Project")
     st.markdown("""
-    - This app uses **XGBoost Regression** to predict transaction-level sales.
-    - Trained on real-world retail sales data from Kaggle.
-    - Evaluated using **Mean Absolute Error (MAE)** to measure average prediction error.
-    - Includes **SHAP explainability** for model transparency.
+    - Model: This app uses **XGBoost Regression** to predict transaction-level sales.
+    - Dataset: Trained on real-world retail sales data from Kaggle.
+    - Metric: Evaluated using **Mean Absolute Error (MAE)** to measure average prediction error.
+    - Explainability: Includes **SHAP explainability** for model transparency.
     """)
 
     st.subheader("🧪 Model Evaluation")
     st.markdown("""
     - ✅ **Random Forest MAE**: $9.21
-    - ✅ **XGBoost MAE**: $8.67 → better performance
+    - ✅ **XGBoost MAE**: $8.67 → better performance & better prediction accuracy.
     - ✔️ XGBoost captures complex patterns with lower error, making it suitable for sales forecasting.
     """)
 
@@ -111,18 +126,25 @@ elif app_mode == "📊 Business Impact":
     st.title("💼 Business Insights & Recommendations")
     st.markdown("""
     ### 💰 Impact of Model Adoption:
-    - Helps optimize **inventory**, reduce over/understock.
+    - Helps similar businesses like **Amazon**, **Netflix**, and e-commerce platforms optimize operations, inventory, and reduce over/understock.
+    - Can be used to predict not only sales but also **customer behavior** and **content popularity**.
     - Enables **targeted promotions** by predicting sales patterns.
-    - For businesses doing $50M/month, a 5% lift = **$2.5M additional revenue/month**.
+    - For businesses doing 50M dollars/month, a 5 percent lift equals **2.5M dollars additional revenue/month**.
 
     ### 🔁 Suitable For:
     - Retail Chains, E-commerce Platforms
-    - Subscription & Streaming Services (adapt prediction logic to content engagement)
+    - Fulfillment Platforms
+    - Subscription & Streaming Services (adapt prediction logic to content engagement & modeling)
 
     ### 🧠 Strategic Recommendations:
-    - Use SHAP to identify **top-selling patterns**
-    - Re-train weekly with new data to adapt to market shifts
-    - Integrate with dashboards (e.g., Tableau, Power BI) for C-suite visibility
+    - Use SHAP to identify **top-selling patterns** and interpret what's driving performance.                                      
+    - Re-train periodically with new data to adapt to market shifts and consumer patterns.                                      
+    - Embed in BI tools and Integrate with dashboards (Tableau, Power BI) for decision-making and C-suite visibility.   
+
+    ### 🧾 Business Uplift:
+    - Sales prediction = improved planning
+    - MAE reduction = better accuracy and confidence
+    - Estimated revenue gain: **$2.5M/month** for medium retailers                           
 
     ### 🧾 Recruiter-Ready Highlights:
     - Full ML pipeline: preprocessing → training → deployment

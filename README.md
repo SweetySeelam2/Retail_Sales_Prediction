@@ -54,6 +54,24 @@ Try the deployed app here 👉
 
 > **Interpretation**: MAE of 8.67 means that, on average, the model's predicted sales deviate by ~$8.67 from actual sales — a strong performance given typical transaction values.
 
+### ✅ Why is MAE shown in dollars ($)?
+
+Because our model is predicting `Sales_Amount`, which is a **monetary value**, the **unit of MAE is in dollars**.
+
+🔎 **Example:**
+
+- True sales amount for a transaction: **$50**                                                                                                                                             
+- Model predicted: **$38**                                                                                                                                                  
+- Absolute error: **|50 - 38| = $12**                                                                                                                                                                    
+- Do this across all records and average it → MAE                                                                                                                                                               
+
+So:
+- Random Forest MAE = **$9.21** → average error per prediction
+- XGBoost MAE = **$8.67** → more accurate, lower error
+- App MAE (e.g. $13.67) → may reflect uploaded data or higher data variability
+
+✅ It’s in **dollars** because that’s what the model is trained to predict.
+
 ---
 
 ## 🧠 SHAP Explainability
@@ -78,9 +96,18 @@ If implemented in real retail or e-commerce environments, this model could:
 
 - 📈 Boost sales targeting by 15–20%
 
-- 💰 Deliver potential **$2.5M/month in added revenue** for mid-sized retailers
+- 💰 Deliver potential **2.5M dollars/month in added revenue** for mid-sized retailers
 
 This predictive approach is also adaptable to **streaming platforms (like Netflix)**, where similar modeling can forecast **user engagement, content popularity**, and **churn risk**.
+
+Also, this approach is adaptable to similar businesses like Netflix or Amazon, where the same logic can be used to forecast:  
+                                                            
+- Customer purchase behavior
+
+- Content consumption trends    
+
+- Revenue performance or user engagement
+
 
 ---
 

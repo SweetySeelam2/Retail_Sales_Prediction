@@ -143,6 +143,26 @@ Retail_Sales_Prediction/
 │   └── SHAP_value.png                                                                               
 └── README.md                                                                                               
 
+----
+
+## 👩‍💻 Contact Me
+
+*Name:* Sweety Seelam
+
+*Email:* sweetyseelam2@gmail.com
+
+*LinkedIn:* https://www.linkedin.com/in/sweetyrao670/
+
+*Portfolio:* https://sweetyseelam2.github.io/SweetySeelam.github.io/
+
+*GitHub Repo:* https://github.com/SweetySeelam2/Casual_Inference_streamlit
+
+*Streamlit Deployed app:* [Live App on Streamlit] (https://retailsalespredictive-ml-modeling.streamlit.app/)
+
+---
+
+⭐ Star this repo if you found it helpful. Contributions and collaborations are welcome!
+
 ---
 
 ## 📜 License                                                                 
@@ -168,23 +188,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-----
-
-## 👩‍💻 Contact Me
-
-*Name:* Sweety Seelam
-
-*Email:* sweetyseelam2@gmail.com
-
-*LinkedIn:* https://www.linkedin.com/in/sweetyrao670/
-
-*Portfolio:* https://sweetyseelam2.github.io/SweetySeelam.github.io/
-
-*GitHub Repo:* https://github.com/SweetySeelam2/Casual_Inference_streamlit
-
-*Streamlit Deployed app:* [Live App on Streamlit] (https://retailsalespredictive-ml-modeling.streamlit.app/)
-
----
-
-⭐ Star this repo if you found it helpful. Contributions and collaborations are welcome!

@@ -164,7 +164,7 @@ Retail_Sales_Prediction/
 
 ## 👩‍💻 Project Links
 
-*GitHub Repo:* https://github.com/SweetySeelam2/Casual_Inference_streamlit
+*GitHub Repo:* https://github.com/SweetySeelam2/Retail_Sales_Prediction
 
 *Streamlit Deployed app:* [Live App on Streamlit] (https://retailsalespredictive-ml-modeling.streamlit.app/)
 
